@@ -9,5 +9,5 @@ RUN npm install
 
 COPY . .
 
-ENTRYPOINT [ "node","src" ]
+ENTRYPOINT [ "node","src/app.js" ]
 
