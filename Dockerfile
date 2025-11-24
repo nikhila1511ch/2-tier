@@ -1,11 +1,11 @@
-FROM openjdk:26-ea-24-jdk-slim-bookworm
+FROM node:25-slim
 
 WORKDIR /app
 
-RUN npm install firebase
+RUN  npm install 
 
 COPY . .
-RUN sudo apt update 
+RUN sudo apt update && sudo apt install firebase 
 
 
 
