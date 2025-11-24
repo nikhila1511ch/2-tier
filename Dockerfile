@@ -4,8 +4,10 @@ WORKDIR /app
 
 RUN  npm install 
 
+COPY Requirements*.json .
+RUN npm install
+
 COPY . .
-RUN sudo apt update && sudo apt install firebase 
 
-
+ENTRYPOINT [ "node","src" ]
 
