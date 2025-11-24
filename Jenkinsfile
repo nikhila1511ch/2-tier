@@ -11,7 +11,7 @@ pipeline{
       DOCKER_PASSWORD='Nikhila@1511'
       IMAGE_NAME ='node'
       IMAGE_TAG='25-slim'
-      TARGET_SERVER=''
+      TARGET_SERVER='172.31.22.1'
           }
     stages{
         stage('check'){
