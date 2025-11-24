@@ -4,7 +4,7 @@ pipeline{
       REPO_URL= "https://github.com/nikhila1511ch/2-tier.git"
       WORK_DIR='2-tier'
       BRANCH_NAME='master'
-      DOCKER_REPO="nikhila1511/task-1"
+      DOCKER_REPO="nikhila1511/2-tier"
       REPO_DIR='2-tier'
       REPO_NAME='2-tier'
       DOCKER_USERNAME='nikhila1511'
