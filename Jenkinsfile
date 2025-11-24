@@ -9,8 +9,8 @@ pipeline{
       REPO_NAME='2-tier'
       DOCKER_USERNAME='nikhila1511'
       DOCKER_PASSWORD='Nikhila@1511'
-      IMAGE_NAME ='node'
-      IMAGE_TAG='25-slim'
+      IMAGE_NAME ='nikhila1511ch/2-tier'
+      IMAGE_TAG='latest'
       TARGET_SERVER='172.31.22.1'
           }
     stages{
