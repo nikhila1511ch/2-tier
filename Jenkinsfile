@@ -3,7 +3,7 @@ pipeline{
     environment{
       REPO_URL= "https://github.com/nikhila1511ch/2-tier.git"
       WORK_DIR='2-tier'
-      BRANCH_NAME='master'
+      BRANCH_NAME='main'
       DOCKER_REPO="nikhila1511/2-tier"
       REPO_DIR='2-tier'
       REPO_NAME='2-tier'
@@ -11,7 +11,7 @@ pipeline{
       DOCKER_PASSWORD='Nikhila@1511'
       IMAGE_NAME ='nikhila1511ch/2-tier'
       IMAGE_TAG='latest'
-      TARGET_SERVER='172.31.22.1'
+      TARGET_SERVER='15.206.207.56'
           }
     stages{
         stage('check'){
