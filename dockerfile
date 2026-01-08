@@ -1,13 +1,12 @@
-FROM node:25-slim
+FROM node:18-alpine
 
 WORKDIR /app
 
-RUN  npm install 
+# Copy source code
+COPY src ./src
 
-COPY package*.json ./
-RUN npm install
+EXPOSE 3000
 
-COPY . .
+CMD ["node", "src/app.js"]
 
-ENTRYPOINT [ "node","src/app.js" ]
 
