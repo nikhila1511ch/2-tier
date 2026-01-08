@@ -1,12 +1,6 @@
-FROM node:18-alpine
-
+FROM node:18
 WORKDIR /app
-
-# Copy source code
-COPY src ./src
-
+COPY . .
+RUN npm install
 EXPOSE 3000
-
-CMD ["node", "src/app.js"]
-
-
+CMD ["npm", "start"]
